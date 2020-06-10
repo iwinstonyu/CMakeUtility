@@ -2,6 +2,7 @@ macro(m_source_group_recurse _sources)
 	file(GLOB_RECURSE ${_sources}
 		"./*.cpp"
 		"./*.h"
+		"./*.inl"
 	)
 	message("sources:" ${${_sources}})
 
